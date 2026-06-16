@@ -39,3 +39,24 @@ The crystal structure analyzed was PDB ID: 4WKQ. The study focused on visualizat
 * Protein: Epidermal Growth Factor Receptor (EGFR)
 * Ligand: Gefitinib
 * PDB ID: 4WKQ
+
+## PyMOL Commands Used
+
+```pml
+fetch 4WKQ
+
+hide everything
+show cartoon
+color cyan
+
+select ligand, organic
+show sticks, ligand
+color orange, ligand
+
+select pocket, byres (ligand around 4)
+show sticks, pocket
+color green, pocket
+
+zoom ligand
+```
+
